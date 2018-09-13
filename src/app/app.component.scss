@@ -18,11 +18,11 @@
 }
 
 .main-menus {
-    height: 100%;
-    flex-shrink: 0;
-    display: flex;
-    flex-flow: row nowrap;
     align-items: center;    
+    display: flex;
+    flex-shrink: 0;
+    flex-flow: row nowrap;
+    height: 100%;
 }
 
 .main-menu {
