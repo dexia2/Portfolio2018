@@ -1,28 +1,52 @@
 <header class="top-bar">
-  <div class="container">
+  <nav class="top-nav">
     <ul class="main-menus">
-      <li class="main-menu">
+      <li class="menu-item">
         <a href="#">Overview</a>
       </li>
-      <li class="main-menu">
+      <li class="menu-item">
         <a href="#">Career</a>
       </li>
-      <li class="main-menu">
+      <li class="menu-item">
         <a href="#">Skill</a>
       </li>
-      <li class="main-menu">
+      <li class="menu-item">
         <a href="#">Output</a>
       </li>
-      <li class="main-menu">
+      <li class="menu-item">
         <a href="#">Contact</a>
       </li>
     </ul>
     <ul class="sub-menus">
-      <li>
+      <li class="menu-item">
         <a href="#">
           <img class="menu-logo" src="../assets/github.svg" />
         </a>
       </li>
     </ul>
-  </div>
+  </nav>
+  <ul class="hamburger" (click)="isOpen=!isOpen" [class.open]="isOpen">
+    <li class="bun"></li>
+    <li class="bun"></li>
+    <li class="bun"></li>
+  </ul>
 </header>
+<nav class="side-nav" [class.open]="isOpen">
+  <ul class="main-menus">
+    <li class="menu-item">
+      <a href="#">Overview</a>
+    </li>
+    <li class="menu-item">
+      <a href="#">Career</a>
+    </li>
+    <li class="menu-item">
+      <a href="#">Skill</a>
+    </li>
+    <li class="menu-item">
+      <a href="#">Output</a>
+    </li>
+    <li class="menu-item">
+      <a href="#">Contact</a>
+    </li>
+  </ul>
+</nav>
