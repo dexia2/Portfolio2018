@@ -9,4 +9,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  /**
+   * コンストラクタ
+   */
+  constructor() {
+  }
+
+  /**
+   * 初期化
+   */
+  ngOnInit() {
+  }
+
 }

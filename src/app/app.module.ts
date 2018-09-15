@@ -9,6 +9,7 @@ import {MatCardModule, MatStepperModule} from '@angular/material';
 // Custom Component
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { HomeComponent } from './home/home.component';
 
 /**
  * モジュール
@@ -16,6 +17,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     NavigationComponent
   ],
   imports: [

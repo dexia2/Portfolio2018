@@ -1,0 +1,117 @@
+#home {
+    background-color: #fff;
+    height: 100vh;
+}
+
+.objects {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .object {
+        position: absolute;
+    }
+    .rectangle {
+        animation: move-object 6s linear infinite;
+        bottom: -150px;
+        &.rectangle1,
+        &.rectangle2,
+        &.rectangle3,
+        &.rectangle4 {
+            background: radial-gradient(#ffa500, #fff);
+            height: 100px;
+            width: 100px;
+        }
+        &.rectangle1 {
+            left: 50%;
+        }
+        &.rectangle2 {
+            animation-delay: 0.3s;
+            left: 10%;
+        }
+        &.rectangle3 {
+            animation-delay: 2s;
+            left: 25%;
+        }
+        &.rectangle4 {
+            animation-delay: 1s;
+            left: 85%;
+        }
+        &.rectangle5,
+        &.rectangle6,
+        &.rectangle7,
+        &.rectangle8 {
+            background: radial-gradient(#e3746b, #fff);
+            height: 50px;
+            width: 50px;
+        }
+        &.rectangle5 {
+            left: 0%;
+        }
+        &.rectangle6 {
+            animation-delay: 2.2s;
+            left: 15%;
+        }
+        &.rectangle7 {
+            animation-delay: 0.8s;
+            left: 45%;
+        }
+        &.rectangle8 {
+            animation-delay: 1.4s;
+            left: 77%;
+        }
+    }
+    .circle {
+        animation: move-object 5s linear infinite;
+        background: radial-gradient(#1cb0ec, #fff);
+        bottom: -250px;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        &.circle1 {
+            animation-delay: 1.5s;
+            left: 3%;
+        }
+        &.circle2 {
+            animation-delay: 0s;
+            left: 95%;
+        }
+    }
+}
+
+@keyframes move-object {
+    0% {
+        opacity: 1;
+        transform: rortate(0deg);
+    }
+    100% {
+        bottom: 80vh;
+        opacity: 0;
+        transform: rotate(540deg);
+    }
+}
+
+.author-info {
+    position: absolute;
+    text-align: center;
+    top: 40vh;
+    width: 100%;
+    .author-name {
+        color: #b7b7b7;
+        font-size: 60px;
+        letter-spacing: .2em;
+        padding: 10px 0;
+    }
+    .author-role {
+        color: #999;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .author-info {
+        .author-name {
+            font-size: 48px;
+            letter-spacing: .2em;
+        }
+    }
+}
