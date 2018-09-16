@@ -1,0 +1,22 @@
+@import "../variables.scss";
+#skill {
+    background-color: $primary-color;
+    padding-bottom: 50px;
+    .charts {
+        .chart-container {
+            display: inline-block;
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #skill {
+        .charts {
+            .chart-container {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}

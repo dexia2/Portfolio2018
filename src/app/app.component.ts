@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 /**
  * エントリーポイント
  */
@@ -9,11 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
-  /**
-   * コンストラクタ
-   */
-  constructor() {
-  }
 
 }

@@ -12,6 +12,7 @@ import { CareerComponent } from './career/career.component';
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { OverviewComponent } from './overview/overview.component';
+import { SkillComponent } from './skill/skill.component';
 
 /**
  * モジュール
@@ -22,7 +23,8 @@ import { OverviewComponent } from './overview/overview.component';
     CareerComponent,
     HomeComponent,
     NavigationComponent,
-    OverviewComponent
+    OverviewComponent,
+    SkillComponent
   ],
   imports: [
     BrowserAnimationsModule,

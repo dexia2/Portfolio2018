@@ -1,12 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import url("../node_modules/reset-css/reset.css");
-
-body, html {
-    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+@import "./app/variables.scss";
+body,
+html {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 a {
     color: inherit;
     text-decoration: none;
 }
+
+.section {
+    text-align: center;
+    .section-title {
+        color: #666;
+        font-size: 60px;
+        letter-spacing: .1em;
+        padding: 50px 0px;
+    }
+}
+
+#career {
+    .mat-stepper-vertical {
+        background-color: $secondary-color;
+    }
+    .mat-step-label {
+        font-size: 24px;
+        letter-spacing: .1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section {
+        .section-title {
+            font-size: 36px;
+            padding: 30px 0px;
+        }
+    }
+
+    #career {
+        .mat-stepper-vertical {
+            background-color: $secondary-color;
+        }
+        .mat-step-label {
+            font-size: 14px;
+            letter-spacing: .1em;
+        }
+    }
+}
+
