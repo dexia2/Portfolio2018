@@ -15,10 +15,4 @@ export class HomeComponent implements OnInit {
    */
   constructor() { }
 
-  /**
-   * 初期化時
-   */ 
-  ngOnInit() {
-  }
-
 }

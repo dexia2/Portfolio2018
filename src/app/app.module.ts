@@ -8,8 +8,9 @@ import {MatCardModule, MatStepperModule} from '@angular/material';
 
 // Custom Component
 import { AppComponent } from './app.component';
-import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { OverviewComponent } from './overview/overview.component';
 
 /**
  * モジュール
@@ -18,7 +19,8 @@ import { HomeComponent } from './home/home.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    NavigationComponent
+    NavigationComponent,
+    OverviewComponent
   ],
   imports: [
     BrowserAnimationsModule,

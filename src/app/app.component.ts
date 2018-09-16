@@ -16,10 +16,4 @@ export class AppComponent {
   constructor() {
   }
 
-  /**
-   * 初期化
-   */
-  ngOnInit() {
-  }
-
 }
