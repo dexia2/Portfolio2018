@@ -10,52 +10,63 @@
     .object {
         position: absolute;
     }
-    .rectangle {
-        animation: move-object 6s linear infinite;
+    .square {
         bottom: -150px;
-        &.rectangle1,
-        &.rectangle2,
-        &.rectangle3,
-        &.rectangle4 {
+        &.square1,
+        &.square2,
+        &.square3,
+        &.square4,
+        &.square5,
+        &.square6 {
+            animation: move-object 6s linear infinite;
             background: radial-gradient(#ffa500, #fff);
             height: 100px;
             width: 100px;
         }
-        &.rectangle1 {
+        &.square1 {
             left: 50%;
         }
-        &.rectangle2 {
+        &.square2 {
             animation-delay: 0.3s;
             left: 10%;
         }
-        &.rectangle3 {
+        &.square3 {
             animation-delay: 2s;
             left: 25%;
         }
-        &.rectangle4 {
+        &.square4 {
             animation-delay: 1s;
             left: 85%;
         }
-        &.rectangle5,
-        &.rectangle6,
-        &.rectangle7,
-        &.rectangle8 {
+        &.square5 {
+            animation-delay: 4s;            
+            left: 30%;
+        }
+        &.square6 {
+            animation-delay: 2.2s;
+            left: 75%;
+        }        
+        &.square7,
+        &.square8,
+        &.square9,
+        &.square10 {
+            animation: move-object 3s linear infinite;
             background: radial-gradient(#e3746b, #fff);
             height: 50px;
             width: 50px;
         }
-        &.rectangle5 {
+        &.square7 {
             left: 0%;
         }
-        &.rectangle6 {
+        &.square8 {
             animation-delay: 2.2s;
             left: 15%;
         }
-        &.rectangle7 {
+        &.square9 {
             animation-delay: 0.8s;
             left: 45%;
         }
-        &.rectangle8 {
+        &.square10 {
             animation-delay: 1.4s;
             left: 77%;
         }
@@ -75,6 +86,14 @@
             animation-delay: 0s;
             left: 95%;
         }
+        &.circle3 {
+            animation-delay: 3s;
+            left: 45%;
+        }
+        &.circle4 {
+            animation-delay: 4.5s;
+            left: 20%;
+        }   
     }
 }
 
