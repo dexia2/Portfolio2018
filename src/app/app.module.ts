@@ -12,6 +12,7 @@ import { CareerComponent } from './career/career.component';
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { OverviewComponent } from './overview/overview.component';
+import { OutputComponent } from './output/output.component';
 import { SkillComponent } from './skill/skill.component';
 
 /**
@@ -24,7 +25,8 @@ import { SkillComponent } from './skill/skill.component';
     HomeComponent,
     NavigationComponent,
     OverviewComponent,
-    SkillComponent
+    OutputComponent,
+    SkillComponent,
   ],
   imports: [
     BrowserAnimationsModule,
