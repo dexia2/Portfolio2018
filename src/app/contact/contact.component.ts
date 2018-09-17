@@ -12,7 +12,7 @@ export class ContactComponent {
 
   /**
    * コンストラクタ
-   */  
+   */
   constructor() { }
 
 }

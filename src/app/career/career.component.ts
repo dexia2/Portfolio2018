@@ -12,7 +12,7 @@ export class CareerComponent {
 
   /**
    * コンストラクタ
-   */  
+   */
   constructor() { }
 
 }

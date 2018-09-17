@@ -19,7 +19,7 @@ export class SkillComponent implements AfterViewInit {
 
   /** フロントエンドのスキル */
   private backendSkills = {
-    labels: ["SQL", "C#", "ASP.NET Core", "Node.js", "Azure"],
+    labels: ['SQL', 'C#', 'ASP.NET Core', 'Node.js', 'Azure'],
     datasets: [{
       data: [90, 80, 80, 60, 50],
       backgroundColor: [
@@ -34,7 +34,7 @@ export class SkillComponent implements AfterViewInit {
 
   /** フロントエンドのスキル */
   private frontendSkills = {
-    labels: ["TypeScript", "HTML / SCSS ", "Angular", "Gulp / Webpack", "jQuery"],
+    labels: ['TypeScript', 'HTML / SCSS ', 'Angular', 'Gulp / Webpack', 'jQuery'],
     datasets: [{
       data: [80, 80, 70, 70, 60],
       backgroundColor: [
@@ -78,8 +78,8 @@ export class SkillComponent implements AfterViewInit {
    * ビュー初期化後
    */
   ngAfterViewInit() {
-    this.createChart(this.backend.nativeElement, this.backendSkills, 'Backend')
-    this.createChart(this.frontend.nativeElement, this.frontendSkills, 'Frontend')
+    this.createChart(this.backend.nativeElement, this.backendSkills, 'Backend');
+    this.createChart(this.frontend.nativeElement, this.frontendSkills, 'Frontend');
   }
 
   /**
@@ -88,9 +88,9 @@ export class SkillComponent implements AfterViewInit {
    * @param skills スキル一覧
    * @param title Chartのタイトル
    * @returns Chartオブジェクト
-   */  
+   */
   private createChart(canvas: any, skills: any, title: string) {
-    const context = canvas.getContext('2d')
+    const context = canvas.getContext('2d');
     return new Chart(context, {
       type: 'horizontalBar',
       data: skills,
