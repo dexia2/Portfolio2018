@@ -9,6 +9,7 @@ import {MatCardModule, MatStepperModule} from '@angular/material';
 // Custom Component
 import { AppComponent } from './app.component';
 import { CareerComponent } from './career/career.component';
+import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { OverviewComponent } from './overview/overview.component';
@@ -22,6 +23,7 @@ import { SkillComponent } from './skill/skill.component';
   declarations: [
     AppComponent,
     CareerComponent,
+    ContactComponent,
     HomeComponent,
     NavigationComponent,
     OverviewComponent,
