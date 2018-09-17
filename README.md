@@ -1,2 +1,10 @@
 # Portfolio2018
-@ƒ|[ƒgƒtƒHƒŠƒIì¬’†‚Å‚·BƒVƒ“ƒvƒ‹‚ÈƒŒƒXƒ|ƒ“ƒVƒu‚ÈƒfƒUƒCƒ“‚É‚·‚é—\’è‚Å‚·B
+dexia2ã®ãƒãƒ¼ãƒˆãƒ•ã‚©ãƒªã‚ªã§ã™ã€‚
+
+# ä½¿ç”¨ã—ãŸæŠ€è¡“
++ Angular6
+    + TypeScript
+    + Scss
++ Angular Material
++ Chart.js
++ reset.css
