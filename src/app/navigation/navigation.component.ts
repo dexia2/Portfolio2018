@@ -24,4 +24,9 @@ export class NavigationComponent implements OnInit {
   ngOnInit() {
   }
 
+  gotoSection(sectionId: string) {
+    this.isOpen = !this.isOpen;
+    window.location.hash = `#${sectionId}`;
+  }
+
 }

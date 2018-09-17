@@ -2,24 +2,24 @@
     <nav class="top-nav">
       <ul class="main-menus">
         <li class="menu-item">
-          <a href="#">Overview</a>
+          <a href="#overview">Overview</a>
         </li>
         <li class="menu-item">
-          <a href="#">Career</a>
+          <a href="#career">Career</a>
         </li>
         <li class="menu-item">
-          <a href="#">Skill</a>
+          <a href="#skill">Skill</a>
         </li>
         <li class="menu-item">
-          <a href="#">Output</a>
+          <a href="#output">Output</a>
         </li>
         <li class="menu-item">
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
       <ul class="sub-menus">
         <li class="menu-item">
-          <a href="#">
+          <a href="https://github.com/dexia2/Portfolio2018" target="_blank">
             <img class="menu-logo" src="../assets/github.svg" />
           </a>
         </li>
@@ -34,19 +34,19 @@
   <nav class="side-nav" [class.open]="isOpen">
     <ul class="main-menus">
       <li class="menu-item">
-        <a href="#">Overview</a>
+        <a (click)="gotoSection('overview')">Overview</a>
       </li>
       <li class="menu-item">
-        <a href="#">Career</a>
+        <a (click)="gotoSection('career')">Career</a>
+      </li>
+      <li (click)="gotoSection('skill')" class="menu-item">
+        <a >Skill</a>
       </li>
       <li class="menu-item">
-        <a href="#">Skill</a>
+        <a (click)="gotoSection('output')">Output</a>
       </li>
       <li class="menu-item">
-        <a href="#">Output</a>
-      </li>
-      <li class="menu-item">
-        <a href="#">Contact</a>
+        <a (click)="gotoSection('contact')">Contact</a>
       </li>
     </ul>
   </nav>
