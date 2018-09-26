@@ -7,7 +7,8 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: flex-start;
+        justify-content: space-between;
         margin: 0 0 2em;
         padding: 0.8em;
         .card {
@@ -37,6 +38,14 @@
 
     }
 
+}
+
+@media screen and (max-width: 1024px) {
+    #output {
+        .cards {       
+            justify-content: space-around;
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {
