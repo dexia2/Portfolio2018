@@ -7,14 +7,14 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        justify-content: space-between;
+        justify-content: center;
         margin: 0 0 2em;
         padding: 0.8em;
         .card {
             display: inline-block;
-            min-width: 300px;
+            min-width: 220px;
             margin-bottom: 20px;
+            margin-right: 10px;
             vertical-align: top;
             width: 20%;
             img {
@@ -44,6 +44,9 @@
     #output {
         .cards {       
             justify-content: space-around;
+            .card {
+                width: 40%;
+            }
         }
     }
 }
