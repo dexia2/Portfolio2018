@@ -23,6 +23,10 @@
                 color: #666;
                 font-size: 20px;
                 padding: 16px;
+                &:hover {
+                    background-color: #cfe2f3;
+                    color: #434343;
+                }
             }
         }
         .sub-menus {
@@ -121,6 +125,9 @@
                     letter-spacing: .08em;
                     padding: 10px 0;
                     text-align: center;
+                    &:hover {
+                        color: #434343;
+                    }
                 }
             }
         }
