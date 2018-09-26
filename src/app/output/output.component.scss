@@ -2,21 +2,24 @@
 #output {
     background-color: $primary-color;
     padding-bottom: 50px;
-
     .cards {
-        display: grid;
+        align-content: center;        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
         margin: 0 0 2em;
-        grid-auto-rows: 1fr;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-gap: 0.8em;
         padding: 0.8em;
-
         .card {
+            display: inline-block;
+            min-width: 300px;
+            margin-bottom: 20px;
+            vertical-align: top;
+            width: 20%;
             img {
                 padding-top: 20px;
                 width: 60%;
             }
-
             .title {
                 color: #606470;
                 font-size: 24px;
@@ -24,7 +27,6 @@
                 line-height: 1.6;
                 margin-bottom: 10px;
             }
-
             .content {
                 font-size: 16px;
                 line-height: 1.2;
@@ -38,5 +40,11 @@
 }
 
 @media screen and (max-width: 480px) {
-    #output {}
+    #output {
+        .cards {
+            .card {
+                width: 100%;
+            }
+        }
+    }
 }
